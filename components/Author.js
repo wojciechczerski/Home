@@ -1,4 +1,7 @@
+import { bodyFontStyle } from "../styles/font";
+
 const style = {
+  ...bodyFontStyle,
   display: "flex",
   justifyContent: "flex-end"
 };
