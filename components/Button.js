@@ -5,6 +5,10 @@ const Button = props => (
       img {
         height: 24px;
       }
+
+      img:active {
+        opacity: 0.7;
+      }
     `}</style>
   </a>
 );
