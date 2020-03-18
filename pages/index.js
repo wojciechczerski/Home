@@ -10,7 +10,7 @@ export default function Index() {
         <HStack align="center">
           <Text>Wojciech Czerski</Text>
         </HStack>
-        <HStack>
+        <HStack align="center">
           <Button
             name="GitHub"
             image="/images/github-64.png"

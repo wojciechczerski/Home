@@ -1,11 +1,12 @@
 const HStack = props => (
-  <div
-    style={{
-      display: "flex",
-      justifyContent: props.align || "flex-start"
-    }}
-  >
+  <div>
     {props.children}
+    <style jsx>{`
+      div {
+        display: flex;
+        justify-content: ${props.align || "flex-start"};
+      }
+    `}</style>
   </div>
 );
 

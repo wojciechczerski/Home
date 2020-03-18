@@ -1,13 +1,14 @@
 const Text = props => (
-  <div
-    style={{
-      color: "white",
-      fontSize: "1em",
-      fontFamily: "Arial, Helvetica, sans-serif",
-      lineHeight: "1.4"
-    }}
-  >
+  <div>
     {props.children}
+    <style jsx>{`
+      div {
+        color: white;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+      }
+    `}</style>
   </div>
 );
 

@@ -1,12 +1,13 @@
 const VStack = props => (
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: props.align || "flex-start"
-    }}
-  >
+  <div>
     {props.children}
+    <style jsx>{`
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: ${props.align || "flex-start"};
+      }
+    `}</style>
   </div>
 );
 
