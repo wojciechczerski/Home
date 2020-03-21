@@ -1,4 +1,5 @@
 import spacing from "../theme/spacing";
+import { textStyle } from "../theme/style";
 import VStack from "./VStack";
 import Text from "./Text";
 import HorizontalLine from "./HorizontalLine";
@@ -9,7 +10,7 @@ import ProjectButton from "./ProjectButton";
 const Project = props => (
   <div>
     <VStack justify="center" align="center">
-      <Text>{props.title}</Text>
+      <Text style={textStyle.title}>{props.title}</Text>
       <HorizontalLine />
       <Text>{props.desc}</Text>
       <HStack justify="center">
@@ -33,6 +34,7 @@ const Project = props => (
         padding-bottom: ${spacing.large};
         padding-left: ${spacing.big};
         padding-right: ${spacing.big};
+        margin: ${spacing.large};
       }
     `}</style>
   </div>
