@@ -4,6 +4,8 @@ const HStack = props => (
     <style jsx>{`
       div {
         display: flex;
+        flex-wrap: wrap;
+        align-items: ${props.align || "stretch"};
         justify-content: ${props.justify || "flex-start"};
       }
     `}</style>

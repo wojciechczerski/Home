@@ -1,7 +1,9 @@
+import spacing from "../theme/spacing";
 import VStack from "./VStack";
 import Text from "./Text";
 import HorizontalLine from "./HorizontalLine";
-import spacing from "../theme/spacing";
+import HStack from "./HStack";
+import ProjectImage from "./ProjectImage";
 
 const Project = props => (
   <div>
@@ -9,6 +11,11 @@ const Project = props => (
       <Text>{props.title}</Text>
       <HorizontalLine />
       <Text>{props.desc}</Text>
+      <HStack justify="center">
+        {props.images.map(image => (
+          <ProjectImage src={image} />
+        ))}
+      </HStack>
     </VStack>
     <style jsx>{`
       div {
