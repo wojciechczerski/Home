@@ -40,6 +40,12 @@ export default function Index() {
               "/images/tomino-device-1.png",
               "/images/tomino-device-2.png"
             ]}
+            buttons={[
+              {
+                title: "View on GitHub",
+                url: "https://github.com/wojciechczerski/Tomino"
+              }
+            ]}
           />
         </VStack>
         <style jsx global>{`

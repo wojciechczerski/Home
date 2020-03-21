@@ -4,6 +4,7 @@ import Text from "./Text";
 import HorizontalLine from "./HorizontalLine";
 import HStack from "./HStack";
 import ProjectImage from "./ProjectImage";
+import ProjectButton from "./ProjectButton";
 
 const Project = props => (
   <div>
@@ -14,6 +15,11 @@ const Project = props => (
       <HStack justify="center">
         {props.images.map(image => (
           <ProjectImage src={image} />
+        ))}
+      </HStack>
+      <HStack>
+        {props.buttons.map(button => (
+          <ProjectButton title={button.title} url={button.url} />
         ))}
       </HStack>
     </VStack>
