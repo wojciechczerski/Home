@@ -4,7 +4,7 @@ const HStack = props => (
     <style jsx>{`
       div {
         display: flex;
-        justify-content: ${props.align || "flex-start"};
+        justify-content: ${props.justify || "flex-start"};
       }
     `}</style>
   </div>

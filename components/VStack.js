@@ -5,7 +5,8 @@ const VStack = props => (
       div {
         display: flex;
         flex-direction: column;
-        justify-content: ${props.align || "flex-start"};
+        align-items: ${props.align || "stretch"};
+        justify-content: ${props.justify || "flex-start"};
       }
     `}</style>
   </div>
