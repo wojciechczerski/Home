@@ -13,6 +13,7 @@ const ProjectButton = props => (
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
         border: 2px solid #ffffff;
+        margin: ${spacing.medium};
       }
       a:active {
         color: black;

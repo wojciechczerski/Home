@@ -11,6 +11,23 @@ const tomino = {
   ]
 };
 
-const projects = [tomino];
+const mosp = {
+  title: "Monster Spin",
+  desc:
+    "Monster Spin is a slot machine game based on the old German slot machine’s design and mechanics. It was built using the Cocos2D engine, written in Objective-C and releases for the iOS platform. I was the main developer of the project.",
+  images: ["/images/mosp-01.png", "/images/mosp-02.png"],
+  buttons: [
+    {
+      title: "See the review",
+      url: "https://www.youtube.com/watch?v=_xo4FQKAXJ0"
+    },
+    {
+      title: "See the gameplay",
+      url: "https://www.youtube.com/watch?v=TS6fOBGME1A"
+    }
+  ]
+};
+
+const projects = [tomino, mosp];
 
 export default projects;

@@ -29,6 +29,7 @@ const Project = props => (
           />
         ))}
       </HStack>
+      <Spacer height={spacing.large} />
     </VStack>
     <style jsx>{`
       div {
