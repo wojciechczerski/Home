@@ -9,6 +9,7 @@ export const textStyle = {
   },
   title: {
     color: "white",
+    fontWeight: "bold",
     fontSize: "2em",
     fontFamily: "Arial, Helvetica, sans-serif",
     lineHeight: "1.4",
