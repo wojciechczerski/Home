@@ -6,12 +6,14 @@ import HorizontalLine from "./HorizontalLine";
 import HStack from "./HStack";
 import ProjectImage from "./ProjectImage";
 import ProjectButton from "./ProjectButton";
+import Spacer from "./Spacer";
 
 const Project = props => (
   <div>
     <VStack justify="center" align="center">
       <Text style={textStyle.title}>{props.title}</Text>
       <HorizontalLine />
+      <Spacer height={spacing.large} />
       <Text>{props.desc}</Text>
       <HStack justify="center">
         {props.images.map(image => (
