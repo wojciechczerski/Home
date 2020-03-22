@@ -45,6 +45,23 @@ const puzzle = {
   ]
 };
 
-const projects = [tomino, mosp, puzzle];
+const bond = {
+  title: "007: License to drive",
+  desc:
+    "This is a casual car driving game developed for Sony. The player controls various vehicles and fights the enemies using different weapons and gadgets. The game was written in Java and was released for J2ME, BREW, Windows Mobile, Blackberry, and Android platforms. In this project, I was responsible for implementing core game mechanics.",
+  images: ["/images/bond-1.png", "/images/bond-2.png"],
+  buttons: [
+    {
+      title: "See the review",
+      url: "https://www.pocketgamer.com/articles/026434/007-license-to-drive/"
+    },
+    {
+      title: "See the gameplay",
+      url: "https://www.youtube.com/watch?v=KTzUIFvmqJg"
+    }
+  ]
+};
+
+const projects = [tomino, mosp, puzzle, bond];
 
 export default projects;
