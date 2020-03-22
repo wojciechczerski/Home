@@ -1,8 +1,10 @@
+import Text from "./Text";
 import spacing from "../theme/spacing";
+import { textStyle } from "../theme/style";
 
 const ProjectButton = props => (
   <a href={props.url} target="_blank">
-    {props.title}
+    <Text style={textStyle.body}>{props.title}</Text>
     <style jsx>{`
       a {
         color: white;
@@ -16,8 +18,7 @@ const ProjectButton = props => (
         margin: ${spacing.medium};
       }
       a:active {
-        color: black;
-        background-color: white;
+        opacity: 0.7;
       }
     `}</style>
   </a>

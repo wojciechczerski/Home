@@ -53,11 +53,7 @@ export default function Index() {
         </VStack>
         <style jsx global>{`
           html {
-            color: white;
             background-color: #00252d;
-            font-size: 1em;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.4;
           }
         `}</style>
       </VStack>

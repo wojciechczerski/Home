@@ -1,6 +1,5 @@
 const baseTextStyle = {
   color: "white",
-  fontWeight: "lighter",
   fontSize: "1em",
   fontFamily: "Arial, Helvetica, sans-serif",
   lineHeight: "1.4"
