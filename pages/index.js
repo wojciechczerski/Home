@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import HStack from "../components/HStack";
 import VStack from "../components/VStack";
 import Project from "../components/Project";
+import projects from "../contents/projects";
 
 export default function Index() {
   return (
@@ -33,20 +34,15 @@ export default function Index() {
           </VStack>
         </HStack>
         <VStack align="center">
-          <Project
-            title="Tomino"
-            desc="The classical puzzle game - made with Unity - designed for mobile"
-            images={[
-              "/images/tomino-device-1.png",
-              "/images/tomino-device-2.png"
-            ]}
-            buttons={[
-              {
-                title: "View on GitHub",
-                url: "https://github.com/wojciechczerski/Tomino"
-              }
-            ]}
-          />
+          {projects.map(project => (
+            <Project
+              key={project.title}
+              title={project.title}
+              desc={project.desc}
+              images={project.images}
+              buttons={project.buttons}
+            />
+          ))}
         </VStack>
         <style jsx global>{`
           html {

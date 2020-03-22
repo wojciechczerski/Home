@@ -36,6 +36,7 @@ const Project = props => (
         -webkit-box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.75);
+        max-width: 800px;
         padding-top: ${spacing.large};
         padding-bottom: ${spacing.large};
         padding-left: ${spacing.big};
