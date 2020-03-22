@@ -3,7 +3,9 @@ import Button from "../components/Button";
 import HStack from "../components/HStack";
 import VStack from "../components/VStack";
 import Project from "../components/Project";
+import Spacer from "../components/Spacer";
 import projects from "../contents/projects";
+import spacing from "../theme/spacing";
 
 export default function Index() {
   return (
@@ -32,6 +34,7 @@ export default function Index() {
               />
             </HStack>
           </VStack>
+          <Spacer width={spacing.medium} />
         </HStack>
         <VStack align="center">
           {projects.map(project => (
