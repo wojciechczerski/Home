@@ -14,6 +14,10 @@ const ProjectButton = props => (
         -webkit-border-radius: 3px;
         border: 2px solid #ffffff;
       }
+      a:active {
+        color: black;
+        background-color: white;
+      }
     `}</style>
   </a>
 );
