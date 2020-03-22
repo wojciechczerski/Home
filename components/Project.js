@@ -32,7 +32,7 @@ const Project = props => (
     </VStack>
     <style jsx>{`
       div {
-        background-color: #00404d;
+        background-color: #00353d;
         -webkit-box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.75);
