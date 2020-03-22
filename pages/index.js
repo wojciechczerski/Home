@@ -4,12 +4,16 @@ import HStack from "../components/HStack";
 import VStack from "../components/VStack";
 import Project from "../components/Project";
 import Spacer from "../components/Spacer";
+import Head from "next/head";
 import projects from "../contents/projects";
 import spacing from "../theme/spacing";
 
 export default function Index() {
   return (
     <div>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
       <VStack>
         <HStack justify="flex-end">
           <VStack justify="center">
