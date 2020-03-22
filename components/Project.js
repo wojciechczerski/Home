@@ -14,7 +14,7 @@ const Project = props => (
       <Text style={textStyle.title}>{props.title}</Text>
       <HorizontalLine />
       <Spacer height={spacing.large} />
-      <Text>{props.desc}</Text>
+      <Text style={textStyle.description}>{props.desc}</Text>
       <HStack justify="center">
         {props.images.map(image => (
           <ProjectImage key={image} src={image} />
