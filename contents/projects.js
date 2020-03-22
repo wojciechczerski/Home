@@ -28,6 +28,23 @@ const mosp = {
   ]
 };
 
-const projects = [tomino, mosp];
+const puzzle = {
+  title: "Puzzle 2",
+  desc:
+    "Puzzle 2 is a game where the player controls a block of size 2 x 1 x 1. The level is completed when the block stands vertically on the finish tile. The game was written in Java and was released for J2ME and iOS platforms. In this project, I was responsible for implementing core game mechanics.",
+  images: ["/images/puzzle-1.png", "/images/puzzle-2.png"],
+  buttons: [
+    {
+      title: "See the review",
+      url: "https://www.pocketgamer.com/articles/024915/puzzle-2/"
+    },
+    {
+      title: "See the gameplay (HD version)",
+      url: "https://www.youtube.com/watch?v=ThwBD1kfvuQ"
+    }
+  ]
+};
+
+const projects = [tomino, mosp, puzzle];
 
 export default projects;
