@@ -17,12 +17,16 @@ const Project = props => (
       <Text>{props.desc}</Text>
       <HStack justify="center">
         {props.images.map(image => (
-          <ProjectImage src={image} />
+          <ProjectImage key={image} src={image} />
         ))}
       </HStack>
       <HStack>
         {props.buttons.map(button => (
-          <ProjectButton title={button.title} url={button.url} />
+          <ProjectButton
+            key={button.url}
+            title={button.title}
+            url={button.url}
+          />
         ))}
       </HStack>
     </VStack>
