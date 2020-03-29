@@ -5,6 +5,10 @@ const tomino = {
   images: ["/images/tomino-device-1.png", "/images/tomino-device-2.png"],
   buttons: [
     {
+      title: "View on Unity Asset Store",
+      url: "https://assetstore.unity.com/packages/slug/159004"
+    },
+    {
       title: "View on GitHub",
       url: "https://github.com/wojciechczerski/Tomino"
     }
