@@ -14,15 +14,10 @@ jobs:
       - run:
           command: npm run build
       - run:
-          name: Create the ~/artifacts directory if it doesn't exist
-          command: mkdir -p ~/artifacts
-      # Copy output to artifacts dir
-      - run:
-          name: Copy artifacts
-          command: cp -R build dist public .output .next .docusaurus ~/artifacts 2>/dev/null || true
-      - store_artifacts:
-          path: ~/artifacts
-          destination: node-build
+          name: Upload via SFTP
+          command: |
+            apk add --no-cache openssh  # install scp if using Alpine image
+            scp -r deploy/${BUILD_VERSION} "${SFTP_USER}@${SFTP_HOST}:/home/${SFTP_USER}/public_html/mydomain.com/build/"
   deploy:
     # This is an example deploy job, not actually used by the workflow
     docker:
@@ -31,7 +26,7 @@ jobs:
       # Replace this with steps to deploy to users
       - run:
           name: deploy
-          command: '#e.g. ./deploy.sh'
+          command: "#e.g. ./deploy.sh"
 workflows:
   build:
     jobs:
